@@ -41,7 +41,7 @@ a{color:#c4bbff;text-decoration:none}a:hover{text-decoration:underline}.wrap{wid
 <p><strong>Local diagnostic error log:</strong> Separately from the encrypted database, the App maintains a small, size-limited local diagnostic error log file on your device to record technical failure metadata (such as timestamp, error type, source, and limited stack frames). It is not uploaded automatically to developer servers.</p>
 
 <h2>3. Internet use and optional external assistant</h2>
-<p>The App does not operate developer-hosted user accounts or automatic cloud synchronization for your study records. The App declares Android’s <code>INTERNET</code> permission solely for an optional external assistant feature:</p>
+<p>The App does not operate developer-hosted user accounts or automatic cloud synchronization for your study records. The App uses network access (<code>INTERNET</code>) to serve advertisements via Google Mobile Ads (AdMob) and to support an optional external assistant feature:</p>
 <ul>
 <li>If you do not configure an external endpoint, the App does not send your study content over the network through this feature.</li>
 <li>If you choose to configure an external HTTPS API endpoint (non-HTTPS URLs are rejected) and enter your own API key, the text you select to submit is sent directly from your device to your chosen endpoint, with your API key sent in the <code>Authorization</code> header, after required user consent.</li>
@@ -66,7 +66,7 @@ a{color:#c4bbff;text-decoration:none}a:hover{text-decoration:underline}.wrap{wid
 
 <h2>6. Device permissions and system features</h2>
 <ul>
-<li><code>INTERNET</code>: Optional user-configured external assistant only.</li>
+<li><code>INTERNET</code>: Google Mobile Ads (AdMob) and optional user-configured external assistant.</li>
 <li><code>RECORD_AUDIO</code>: Optional flashcard voice recordings.</li>
 <li><code>POST_NOTIFICATIONS</code> &amp; <code>VIBRATE</code>: Focus timer alerts and study reminders.</li>
 <li><code>RECEIVE_BOOT_COMPLETED</code> &amp; <code>SCHEDULE_EXACT_ALARM</code>: Restoring scheduled reminders after reboot; exact-alarm access is declared only up to Android API 32, while newer Android versions use inexact scheduling subject to system power management.</li>
@@ -79,7 +79,7 @@ a{color:#c4bbff;text-decoration:none}a:hover{text-decoration:underline}.wrap{wid
 <p>If you email <a href="mailto:moaz76943@gmail.com">moaz76943@gmail.com</a> for support or privacy inquiries, we receive your email address, message content, and any attachments you choose to include. We use this information only to respond, investigate technical issues, and comply with legal obligations.</p>
 
 <h2>8. Advertising, analytics and paid features</h2>
-<p>The current release does not include developer-integrated advertising SDKs, third-party analytics SDKs, remote crash-reporting services, cloud accounts, or active in-app subscriptions. We do not sell personal information. If future versions introduce such features, we will update this Policy and store disclosures first and obtain affirmative user consent where required by applicable law.</p>
+<p>The current release integrates <strong>Google Mobile Ads (AdMob)</strong> to display ads. Through the Google Mobile Ads SDK, Google and its advertising partners may collect or share device and advertising identifiers (such as Advertising ID and App Set ID), approximate location derived from network/IP, diagnostic and performance data, and user/ad interaction data in accordance with Google’s policies and our Google Play Data Safety disclosures. The current release does not include separate third-party analytics SDKs, remote crash-reporting services, cloud accounts, or active in-app subscriptions. We do not sell personal information. If future versions introduce paid subscriptions or additional features, we will update this Policy and store disclosures accordingly.</p>
 
 <h2>9. Retention, deletion and your privacy rights</h2>
 <ul>
@@ -110,7 +110,7 @@ a{color:#c4bbff;text-decoration:none}a:hover{text-decoration:underline}.wrap{wid
 <p><strong>سجل الأخطاء التشخيصي المحلي:</strong> بشكل منفصل عن قاعدة البيانات المشفرة، يحتفظ التطبيق بملف سجل أخطاء تشخيصي محلي محدود الحجم على جهازك لتسجيل بيانات فنية عن الأعطال (مثل التوقيت ونوع الخطأ ومصدره وعدد محدود من إطارات التتبع). ولا يُرفع هذا السجل تلقائياً إلى خوادم المطوّر.</p>
 
 <h2>3. استخدام الإنترنت والمساعد الخارجي الاختياري</h2>
-<p>لا يشغّل التطبيق خدمة حسابات مستخدمين يديرها المطوّر ولا مزامنة سحابية تلقائية لسجلاتك الدراسية. ويعلن التطبيق عن صلاحية الإنترنت (<code>INTERNET</code>) في Android حصراً لدعم ميزة المساعد الخارجي الاختيارية:</p>
+<p>لا يشغّل التطبيق خدمة حسابات مستخدمين يديرها المطوّر ولا مزامنة سحابية تلقائية لسجلاتك الدراسية. ويستخدم التطبيق الوصول إلى الشبكة (<code>INTERNET</code>) لعرض الإعلانات عبر Google Mobile Ads (AdMob) ولدعم ميزة المساعد الخارجي الاختيارية:</p>
 <ul>
 <li>إذا لم تقم بضبط نقطة نهاية خارجية، فلن يرسل التطبيق محتواك الدراسي عبر الشبكة من خلال هذه الميزة.</li>
 <li>إذا اخترت ضبط نقطة نهاية API خارجية تستخدم HTTPS (يتم رفض العناوين غير HTTPS) وأدخلت مفتاح API الخاص بك، يُرسل النص الذي تختار إرساله مباشرةً من جهازك إلى نقطة النهاية التي اخترتها، مع إرسال مفتاح API ضمن ترويسة <code>Authorization</code>، وذلك بعد الحصول على الموافقة المطلوبة منك.</li>
@@ -135,7 +135,7 @@ a{color:#c4bbff;text-decoration:none}a:hover{text-decoration:underline}.wrap{wid
 
 <h2>6. أذونات الجهاز وخصائص النظام</h2>
 <ul>
-<li><code>INTERNET</code>: مخصص حصراً لميزة المساعد الخارجي الاختياري الذي يضبطه المستخدم.</li>
+<li><code>INTERNET</code>: خاص بإعلانات Google Mobile Ads (AdMob) وميزة المساعد الخارجي الاختياري الذي يضبطه المستخدم.</li>
 <li><code>RECORD_AUDIO</code>: للتسجيلات الصوتية الاختيارية للبطاقات التعليمية.</li>
 <li><code>POST_NOTIFICATIONS</code> و<code>VIBRATE</code>: لتنبيهات مؤقت التركيز وتذكيرات الدراسة.</li>
 <li><code>RECEIVE_BOOT_COMPLETED</code> و<code>SCHEDULE_EXACT_ALARM</code>: لاستعادة التذكيرات المجدولة بعد إعادة التشغيل؛ ويُعلن إذن المنبّهات الدقيقة فقط حتى Android API 32، بينما تستخدم الإصدارات الأحدث جدولة غير دقيقة خاضعة لإدارة الطاقة في النظام.</li>
@@ -148,7 +148,7 @@ a{color:#c4bbff;text-decoration:none}a:hover{text-decoration:underline}.wrap{wid
 <p>إذا راسلت <a href="mailto:moaz76943@gmail.com">moaz76943@gmail.com</a> لطلب الدعم أو الاستفسار حول الخصوصية، فإننا نتلقى عنوان بريدك الإلكتروني ومحتوى الرسالة وأي مرفقات تختار إرسالها. ونستخدم هذه المعلومات فقط للرد والتحقيق في المشكلات التقنية والامتثال للالتزامات القانونية.</p>
 
 <h2>8. الإعلانات والتحليلات والميزات المدفوعة</h2>
-<p>لا يتضمن الإصدار الحالي حزم إعلانات مدمجة أو أدوات تحليلات خارجية أو خدمات تقارير أعطال عن بُعد أو حسابات سحابية أو اشتراكات مدفوعة نشطة داخل التطبيق. ولا نبيع المعلومات الشخصية. وإذا أضافت الإصدارات المستقبلية مثل هذه الميزات، فسنحدّث هذه السياسة وإفصاحات المتجر أولاً ونحصل على الموافقة الصريحة للمستخدم حيثما يفرض القانون المعمول به ذلك.</p>
+<p>يتضمن الإصدار الحالي حزمة <strong>Google Mobile Ads (AdMob)</strong> لعرض الإعلانات. وعبر حزمة SDK الخاصة بإعلانات Google، قد يتم جمع أو مشاركة معرّفات الجهاز والإعلان (مثل Advertising ID وApp Set ID) والموقع الجغرافي التقريبي المستنتج من الشبكة/IP وبيانات التشخيص والأداء وبيانات التفاعل مع الإعلانات والتطبيق وفق سياسات Google وإفصاحات أمان البيانات (Data Safety) في Google Play. ولا يتضمن الإصدار الحالي حزم تحليلات خارجية مستقلة أو خدمات تقارير أعطال عن بُعد أو حسابات سحابية أو اشتراكات مدفوعة نشطة داخل التطبيق. ولا نبيع المعلومات الشخصية، وإذا أضفنا اشتراكات مدفوعة أو ميزات إضافية في إصدارات مستقبلية فسنحدّث هذه السياسة وإفصاحات المتجر وفق ذلك.</p>
 
 <h2>9. الاحتفاظ بالبيانات وحذفها وحقوق الخصوصية</h2>
 <ul>
